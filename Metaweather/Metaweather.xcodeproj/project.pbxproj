@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		145AECF326819228001B3074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145AECF226819228001B3074 /* Assets.xcassets */; };
 		145AECF626819228001B3074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145AECF426819228001B3074 /* LaunchScreen.storyboard */; };
 		145AED0126819229001B3074 /* MetaweatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145AED0026819229001B3074 /* MetaweatherTests.swift */; };
+		145AED1B2681A5BC001B3074 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 145AED1A2681A5BC001B3074 /* AlamofireNetworkActivityIndicator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145AED1B2681A5BC001B3074 /* AlamofireNetworkActivityIndicator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +114,9 @@
 			dependencies = (
 			);
 			name = Metaweather;
+			packageProductDependencies = (
+				145AED1A2681A5BC001B3074 /* AlamofireNetworkActivityIndicator */,
+			);
 			productName = Metaweather;
 			productReference = 145AECE626819227001B3074 /* Metaweather.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 145AECDD26819227001B3074;
+			packageReferences = (
+				145AED192681A5BC001B3074 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */,
+			);
 			productRefGroup = 145AECE726819227001B3074 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -464,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		145AED192681A5BC001B3074 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		145AED1A2681A5BC001B3074 /* AlamofireNetworkActivityIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 145AED192681A5BC001B3074 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */;
+			productName = AlamofireNetworkActivityIndicator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 145AECDE26819227001B3074 /* Project object */;
 }
